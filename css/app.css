@@ -84,6 +84,7 @@ body {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -130,7 +131,11 @@ button {
     background-color: white;
 }
 
-
+.card {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}
 
 
 /* HEADER */
@@ -183,9 +188,11 @@ header .row {
     border-radius: 24px;
 }
 
+.hero p {
+    line-height: 30px;
+}
 
-
-.card {
+.hero .card {
     flex-direction: column;
     gap: 30px;
     text-align: center;
@@ -207,7 +214,7 @@ header .row {
     
 }
 
-.card img {
+.hero .card img {
     filter: invert(61%) sepia(82%) saturate(6804%) hue-rotate(192deg) brightness(101%) contrast(104%);
     height: 80px;
     
@@ -220,6 +227,9 @@ header .row {
 
 .apple-bt {
     align-items: center;
+    font-size: 16px;
+    padding: 12px 48px;
+    
 }
 
 .apple-bt img {
@@ -227,6 +237,140 @@ header .row {
     margin-right: 5px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
+
+/* ----------STRATEGIC---------- */
+
+.strategic {
+    background-color: #9593E6;
+    color: white;
+    padding: 50px 0 10px 0;
+}
+
+.strategic .row {
+    padding: 24px;
+}
+
+.strategic [class^="col"] {
+    padding: 24px;
+}
+
+.starategic-image {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.starategic-image img {
+    margin-bottom: 80px;
+    
+}
+
+.strategic .card {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.planning {
+    padding: 0 50px;
+}
+
+.arrow-down-bt {
+    background-color: #9593E6;
+    
+}
+
+.arrow-down-bt img {
+    width: 25px;
+    padding: 3px;
+}
+
+.col-end {
+    align-items: flex-end;
+}
+
+/* ----------TESTIMONIALS---------- */
+
+
+.testimonials {
+    margin-bottom: 60px;
+}
+.testimonials h1 {
+    font-size: 40px;
+    color: #9593E6;
+}
+.testimonials .row {
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.testimonials-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonials-title * {
+    margin: 25px;
+}
+
+.testimonials .card {
+    flex-direction: row;
+    text-align: center;
+    background-color: #9593E6;
+    border-radius: 25px;
+    color: white;
+    align-items: center;
+    gap: 40px;
+    
+
+}
+
+.testimonials-image {
+    width: 200px;
+    margin: 0 auto;
+}
+.testimonials-image img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+}
+
+.testimonials-name h3 {
+    margin-top: 15px;
+}
+
+.testimonials-name img {
+    width: 20px;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(313deg) brightness(103%) contrast(101%);
+}
+
+/* ------------------BENEFIT------------------ */
+
+.benefit {
+    background-color: #9593E6;
+}
+
+.benefit .row {
+    padding: 40px 0;
+}
+
+.benefit [class^="col"] {
+    padding: 12px;
+}
+
+.benefit .card {
+    background-color: white;
+    color: #9593E6;
+    border-radius: 24px;
+}
+
+.benefit h1 {
+    font-size: 60px;
+}
+
+
+
 
 
 
@@ -256,6 +400,10 @@ header .row {
         width: calc((100% / 12) * 8);
     }
 
+    .col-6-md {
+        width: calc((100% / 12) * 6);
+    }
+
     .col-4-md {
         width: calc((100% / 12) * 4);
     }
@@ -264,11 +412,22 @@ header .row {
 
         display: none;
     }
-    /* header */
-    /* .header-action {
-        display: none;
-    } */
+    /* Strategic */
 
+    .strategic h1 {
+        font-size: 40px;
+    }
+
+    /* testimonials */
+
+    .testimonials .card {
+        text-align: left;
+    }
+    
+    .testimonials-image {
+        align-items: center;
+    }
+    
 }
 
 
@@ -297,6 +456,20 @@ header .row {
     
     .card-column {
         width: 50%;
+    }
+
+    .col-4-lg {
+        width: calc((100% / 12) * 4);
+    }
+
+    .col-6-lg {
+        width: calc((100% / 12) * 6);
+    }
+
+    /* Strategic */
+
+    .strategic h1 {
+        font-size: 30px;
     }
 }
 
