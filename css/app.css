@@ -148,7 +148,7 @@ header {
 header .row {
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 16px 0;
 }
 
 
@@ -162,6 +162,10 @@ header .row {
 .hamburger-header {
     width: 40px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.logo * {
+    display: block;
 }
 
 
@@ -201,17 +205,25 @@ header .row {
 }
 
 .card-double {
-    
+    flex-direction: column;
     height: 100%;
     padding: 25px 25px 0 25px;
+    gap: 20px;
 }
 
 .card-column {
-    
+    text-align: center;
     flex-direction: column;
     gap: 30px;
     
     
+}
+.col-end {
+    align-self: center;
+}
+.col-end img {
+    display: block;
+    width: 250px;
 }
 
 .hero .card img {
@@ -229,6 +241,7 @@ header .row {
     align-items: center;
     font-size: 16px;
     padding: 12px 48px;
+    margin: 0 auto;
     
 }
 
@@ -285,9 +298,6 @@ header .row {
     padding: 3px;
 }
 
-.col-end {
-    align-items: flex-end;
-}
 
 /* ----------TESTIMONIALS---------- */
 
@@ -303,6 +313,9 @@ header .row {
     gap: 20px;
     padding-bottom: 40px;
 }
+.testimonials-name {
+    flex-direction: column;
+}
 
 .testimonials-title {
     text-align: center;
@@ -311,6 +324,12 @@ header .row {
 
 .testimonials-title * {
     margin: 25px;
+}
+
+.testimonials p,
+.testimonial span {
+    line-height: 1.85em;
+    
 }
 
 .testimonials .card {
@@ -365,9 +384,97 @@ header .row {
     border-radius: 24px;
 }
 
-.benefit h1 {
+.benefit .card h1 {
     font-size: 60px;
 }
+
+.benefit p {
+    line-height: 1.85em;
+}
+
+.benefit-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 24px;
+    
+}
+
+/* ---------ABOUT US--------------- */
+
+
+.about .row {
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px 48px;
+}
+
+.about [class^="col"] {
+    padding: 24px;
+}
+.about h1 {
+    font-size: 36px;
+    color: #9593E6;
+    margin-top: 40px;
+}
+
+.about p,
+.about h3 {
+    line-height: 1.85em;
+}
+
+.about [class^="col"] {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-image {
+    position: relative;
+}
+.about-image img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.about-image .about-quote {
+    width: 70px;
+    position: absolute;
+    left: 150px;
+    filter: invert(61%) sepia(36%) saturate(1064%) hue-rotate(202deg) brightness(98%) contrast(83%);
+}
+
+.about-description {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.about-description h3 {
+    color: #9593E6;
+    font-size: 25px;
+
+}
+
+.linkedin-bt {
+    align-items: center;
+    font-size: 12px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    gap: 10px;
+    color: white;
+    background-color: #9593E6;
+    width: 200px;
+    
+    
+}
+
+.linkedin-bt img {
+    width: 14px;
+    margin-right: 5px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+
 
 
 
@@ -412,10 +519,24 @@ header .row {
 
         display: none;
     }
+
+    /* Header */
+
+    .card-column {
+        text-align: left;
+    
+    }
+
+    .apple-bt {
+        margin-left: 0;
+    }
     /* Strategic */
 
     .strategic h1 {
         font-size: 40px;
+    }
+    .col-end {
+        align-self: flex-start;
     }
 
     /* testimonials */
@@ -427,6 +548,25 @@ header .row {
     .testimonials-image {
         align-items: center;
     }
+
+    /* Benefit */
+
+    .benefit-title {
+        font-size: 45px;
+                
+    }
+
+    /* About */
+
+    .about .row {
+        flex-direction: row;
+    }
+
+    .about-image {
+        margin-top: 40px;
+    }
+
+
     
 }
 
@@ -466,10 +606,43 @@ header .row {
         width: calc((100% / 12) * 6);
     }
 
+    .card-double {
+        flex-direction: row;
+    }
+
+    .col-end {
+        align-self: flex-end;
+    }
+
     /* Strategic */
 
     .strategic h1 {
         font-size: 30px;
+    }
+
+    /* Benefit */
+
+    .benefit-title {
+        font-size: 60px;
+                
+    }
+
+    /* about */ 
+
+    .col-3-md {
+        width: calc((100% / 12) * 3);
+    }
+
+    .col-9-md {
+        width: calc((100% / 12) * 9);
+    }
+
+    .about h1 {
+        font-size: 60px;
+    }
+
+    .about p {
+        font-size: 20px;
     }
 }
 
