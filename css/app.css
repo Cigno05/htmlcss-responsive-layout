@@ -1,3 +1,15 @@
+/* Variabili */
+
+:root {
+    /* color */
+    --dark-blue: #0084FD;
+    --light-blue: #B5DDFF;
+    --lilac: #9792E5;
+
+}
+
+
+
 /* RESET */
 
 * {
@@ -26,6 +38,8 @@ body {
     font-family: 'Roboto', sans-serif;
 
 }
+
+
 
 /* Column size */
 
@@ -130,7 +144,7 @@ button {
 
 
 .bg-blue {
-    background-color: #0084FD;
+    background-color: var(--dark-blue);
 }
 
 .bg-white {
@@ -147,7 +161,7 @@ button {
 /* HEADER */
 
 header {
-    background-color: #0084FD;
+    background-color: var(--dark-blue);
     color: white;
 }
 
@@ -181,12 +195,12 @@ header .row {
 
 .hero {
     background-color: white;
-    color: #0084FD;
+    color: var(--dark-blue);
 }
 
 
 .hero .row {
-    margin: 0 -12px;
+    margin: 48px -12px;
 }
 .hero [class^="col"] {
     padding: 12px;
@@ -194,7 +208,7 @@ header .row {
 
 .hero .card,
 .hero .card-double {
-    background-color: #B5DDFF;
+    background-color: var(--light-blue);
     border-radius: 24px;
 }
 
@@ -260,7 +274,7 @@ header .row {
 /* ----------STRATEGIC---------- */
 
 .strategic {
-    background-color: #9593E6;
+    background-color: var(--lilac);
     color: white;
     padding: 50px 0 10px 0;
 }
@@ -295,7 +309,7 @@ header .row {
 }
 
 .arrow-down-bt {
-    background-color: #9593E6;
+    background-color: var(--lilac);
     
 }
 
@@ -313,7 +327,7 @@ header .row {
 }
 .testimonials h1 {
     font-size: 40px;
-    color: #9593E6;
+    color: var(--lilac);
 }
 .testimonials .row {
     gap: 20px;
@@ -341,7 +355,7 @@ header .row {
 .testimonials .card {
     flex-direction: row;
     text-align: center;
-    background-color: #9593E6;
+    background-color: var(--lilac);
     border-radius: 25px;
     color: white;
     align-items: center;
@@ -373,7 +387,7 @@ header .row {
 /* ------------------BENEFIT------------------ */
 
 .benefit {
-    background-color: #9593E6;
+    background-color: var(--lilac);
 }
 
 .benefit .row {
@@ -386,7 +400,7 @@ header .row {
 
 .benefit .card {
     background-color: white;
-    color: #9593E6;
+    color: var(--lilac);
     border-radius: 24px;
 }
 
@@ -419,7 +433,7 @@ header .row {
 }
 .about h1 {
     font-size: 36px;
-    color: #9593E6;
+    color: var(--lilac);
     margin-top: 40px;
 }
 
@@ -456,7 +470,7 @@ header .row {
     align-items: flex-start;
 }
 .about-description h3 {
-    color: #9593E6;
+    color: var(--lilac);
     font-size: 25px;
 
 }
@@ -468,7 +482,7 @@ header .row {
     margin: 0 auto;
     gap: 10px;
     color: white;
-    background-color: #9593E6;
+    background-color: var(--lilac);
     width: 200px;
     
     
@@ -483,7 +497,7 @@ header .row {
 /* --------FREE----------- */
 
 .free {
-    background-color: #9593E6;
+    background-color: var(--lilac);
     color: white;
     padding: 60px 0;
 
@@ -502,7 +516,7 @@ header .row {
 .free-bt {
     font-size: 20px;
     padding: 24px 96px;
-    color: #9593E6;
+    color: var(--lilac);
     font-weight: 600;
 }
 
@@ -536,7 +550,7 @@ footer .row {
 }
 
 footer a {
-    color: #9593E6;
+    color: var(--lilac);
     text-decoration: underline;
 }
 
@@ -717,7 +731,7 @@ footer a {
 /* debug */
 
 
-.debug .container,
+/* .debug .container,
 .debug .container-sm {
     border: 2px solid black;
 }
@@ -733,4 +747,4 @@ footer a {
 .debug .card {
     border: 2px solid purple;
 
-}
+} */
