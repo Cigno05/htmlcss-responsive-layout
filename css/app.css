@@ -243,7 +243,7 @@ header .row {
 }
 .col-end img {
     display: block;
-    width: 250px;
+    
 }
 
 .hero .card img {
@@ -305,7 +305,8 @@ header .row {
 }
 
 .planning {
-    padding: 0 50px;
+    padding: 0 0;
+    margin: 0 auto;
 }
 
 .arrow-down-bt {
