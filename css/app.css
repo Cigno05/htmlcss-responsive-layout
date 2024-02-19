@@ -311,12 +311,15 @@ header .row {
 
 .arrow-down-bt {
     background-color: var(--lilac);
+    padding: 5px;
     
 }
 
 .arrow-down-bt img {
-    width: 25px;
+    width: 32px;
     padding: 3px;
+    aspect-ratio: 1/1;
+
 }
 
 
@@ -692,6 +695,10 @@ footer a {
 
     .strategic h1 {
         font-size: 30px;
+    }
+
+    .planning {
+        max-width: 250px;
     }
 
     /* Benefit */
